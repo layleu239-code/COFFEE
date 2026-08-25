@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Prevent search engines from indexing the login page
+Disallow: /login.html
+
+# Link to your XML Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
