@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crave & Co. | Gourmet Cafe, Kitchen & Bakery</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="logo" href="#top" aria-label="Crave and Co home"><span class="logo-mark">C</span><span>crave <i>&</i> co.</span></a>
+		<nav class="main-nav" aria-label="Main navigation">
+			<a href="iindext.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="https://bdaycake.com/" target="_blank" rel="noopener noreferrer">Birthday cakes</a>
+		</nav>
+		<div class="header-actions"><a class="login-link" href="login.html">Log in</a><button class="cart-button" id="cartButton" type="button" aria-label="Open shopping bag"><span>Bag</span><b id="cartCount">0</b></button></div>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="hero-copy">
+				<p class="eyebrow">Fresh coffee <span></span> Handmade cakes</p>
+				<span class="premium-badge">Premium cafe & bakery</span>
+				<h1>Taste quality<br>in every <em>sip & bite.</em></h1>
+				<p class="hero-intro">Specialty brews, chef-crafted plates, and delicate baked goods made fresh every day.</p>
+				<a class="button button-dark" href="#menu">Explore the menu <span>↘</span></a>
+			</div>
+			<div class="hero-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1200&q=85" alt="Fresh coffee in a ceramic cup"><span class="cute-sticker">baked<br>with love <b>♥</b></span></div>
+			<div class="hero-note"><span>01</span><span class="line"></span><span>Made with<br>good things</span></div>
+		</section>
+
+		<section class="feature-strip" aria-label="Shop benefits"><div><strong>01</strong><span>Freshly baked<br>every morning</span></div><div><strong>02</strong><span>Thoughtful<br>ingredients</span></div><div><strong>03</strong><span>Ready for<br>pick-up & delivery</span></div><div class="strip-quote">“The happiest<br>kind of treat.”</div></section>
+
+		<section class="cake-spotlight"><div class="spotlight-heading"><p class="eyebrow">Fresh from the oven</p><h2>Meet the<br><em>cake table.</em></h2><a class="text-link" href="#menu" id="showCakes">See all cakes <span>↘</span></a></div><div class="spotlight-grid"><article class="spotlight-cake"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85" alt="Chocolate cake with berries"><div><h3>Chocolate Cloud</h3><p>Silky mousse, cocoa sponge</p><strong>$7.50</strong><button class="spotlight-add" data-spotlight="0" aria-label="Add Chocolate Cloud to bag">+</button></div></article><article class="spotlight-cake"><img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=700&q=85" alt="Strawberry cake slice"><div><h3>Strawberry Shortcake</h3><p>Vanilla cream, fresh berries</p><strong>$7.00</strong><button class="spotlight-add" data-spotlight="1" aria-label="Add Strawberry Shortcake to bag">+</button></div></article><article class="spotlight-cake"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=85" alt="Berry cake slice"><div><h3>Raspberry Rose</h3><p>Raspberry jam, rose mascarpone</p><strong>$7.00</strong><button class="spotlight-add" data-spotlight="2" aria-label="Add Raspberry Rose to bag">+</button></div></article></div></section>
+
+		<section class="customer-info"><div class="info-heading"><p class="eyebrow">A little more information</p><h2>Good food,<br><em>made easy.</em></h2></div><div class="info-grid"><article><span class="info-number">01</span><h3>Choose your favourites</h3><p>Browse 50 cakes and drinks, filter by category, and add your picks to the bag in seconds.</p></article><article><span class="info-number">02</span><h3>Pick up or get delivery</h3><p>Choose shop pickup or delivery around Phnom Penh when you complete your order.</p></article><article><span class="info-number">03</span><h3>Celebrate your way</h3><p>Need a whole cake or a larger order? Contact our kitchen at least 48 hours ahead.</p></article></div></section>
+
+		<section class="menu-section" id="menu">
+			<div class="section-heading"><div><p class="eyebrow">What are you craving?</p><h2>Find your <em>favourite.</em></h2></div><p class="menu-count"><b>50</b> things to love</p></div>
+			<div class="menu-tools"><div class="filters" role="group" aria-label="Filter menu"><button class="filter active" data-filter="all">All <small>50</small></button><button class="filter" data-filter="cake">Cakes <small>25</small></button><button class="filter" data-filter="drink">Drinks <small>25</small></button></div><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search the menu..."></label></div>
+			<div class="product-grid" id="productGrid"></div>
+			<p class="empty-state" id="emptyState">Nothing sweet found. Try another search.</p>
+		</section>
+
+		<section class="story" id="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=85" alt="A fresh slice of cake with berries"></div><div class="story-copy"><p class="eyebrow">A note from the kitchen</p><h2>Small batches.<br><em>Big feeling.</em></h2><p>Crumb & Pour began with one oven, a family recipe, and a belief that everyday moments deserve a lovely centrepiece. Today, we still bake in small batches and pour every cup with care.</p><a class="text-link" href="#visit">Come say hello <span>↗</span></a></div></section>
+
+		<section class="celebration"><div><p class="eyebrow">For the big little moments</p><h2>Make it<br><em>personal.</em></h2></div><div class="celebration-copy"><p>Birthdays, office treats, or simply Tuesday. Tell us what you are celebrating and our kitchen will make a cake that feels like yours.</p><div class="celebration-links"><a class="button button-dark" href="mailto:hello@crumbpour.com?subject=Custom%20cake%20order">Start a custom order <span>↗</span></a><a class="birthday-link" href="https://bdaycake.com/" target="_blank" rel="noopener noreferrer">Explore birthday cakes <span>↗</span></a><span>48 hours notice<br>recommended</span></div></div></section>
+
+		<section class="faq"><div class="faq-title"><p class="eyebrow">Good to know</p><h2>Questions,<br><em>answered.</em></h2></div><div class="faq-list"><details open><summary>Can I order a whole cake?</summary><p>Absolutely. Whole cakes serve 6–12 people and can be reserved by email with 48 hours notice.</p></details><details><summary>Do you offer delivery?</summary><p>Yes. We deliver around Phnom Penh every day. Delivery is arranged when we confirm your order.</p></details><details><summary>Do you have dairy-free options?</summary><p>Several drinks can be made dairy-free with oat or coconut milk. Please ask us about cake ingredients before ordering.</p></details></div></section>
+
+		<section class="visit" id="visit"><p class="eyebrow">Drop in anytime</p><h2>Come for cake.<br><em>Stay for a while.</em></h2><div class="visit-details"><span>Mon–Sun / 8:00–20:00</span><span>12 Street 240, Phnom Penh</span><a href="mailto:hello@crumbpour.com">hello@crumbpour.com ↗</a></div></section>
+	</main>
+
+	<footer><a class="logo" href="#top"><span class="logo-mark">C</span><span>crumb <i>&</i> pour</span></a><p>Made for the sweet moments.</p><span>© 2026 Crumb & Pour</span></footer>
+
+	<aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="cart-top"><div><p class="eyebrow">Your order</p><h2>Shopping bag</h2></div><button class="close-cart" id="closeCart" type="button" aria-label="Close shopping bag">×</button></div><div class="cart-items" id="cartItems"><div class="cart-empty">Your bag is waiting<br>for something delicious.</div></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><button class="button button-dark checkout" type="button">Checkout <span>↗</span></button></div></aside><div class="overlay" id="overlay"></div>
+	<div class="checkout-modal" id="checkoutModal" aria-hidden="true"><div class="checkout-card"><button class="close-cart" id="closeCheckout" type="button" aria-label="Close checkout">×</button><div id="checkoutFormView"><p class="eyebrow">Almost there</p><h2>Complete your<br><em>order.</em></h2><form id="checkoutForm"><div class="form-row"><label class="field"><span>Your name</span><input name="name" required></label><label class="field"><span>Phone number</span><input name="phone" type="tel" required></label></div><label class="field"><span>Order type</span><select name="orderType"><option>Pick up at the shop</option><option>Delivery in Phnom Penh</option></select></label><label class="field"><span>Payment method</span><select name="paymentMethod"><option>Pay at the shop</option><option>Pay by QR on pickup</option><option>Cash on delivery</option></select></label><label class="field"><span>Notes for the kitchen</span><textarea name="notes" placeholder="Optional"></textarea></label><div class="checkout-summary"><span>Total today</span><strong id="checkoutTotal">$0.00</strong></div><button class="button button-dark" type="submit">Place order <span>↗</span></button></form></div><div class="order-success" id="orderSuccess" hidden><span class="success-mark">✓</span><p class="eyebrow">Order received</p><h2>Thank you,<br><em>sweet friend.</em></h2><p>We will contact you shortly to confirm the details of your order.</p><div class="qr-payment"><img id="orderQr" alt="QR code containing your order summary"><span>Scan to save your<br>order summary</span></div><a class="button button-dark" href="#menu" id="continueShopping">Continue shopping <span>↘</span></a></div></div></div>
+	<script>
+		const products = [
+			['cake','Chocolate Cloud','Silky chocolate mousse, cocoa sponge','$7.50','157898'],['cake','Strawberry Shortcake','Vanilla cream, fresh strawberries','$7.00','146434'],['cake','Lemon Olive Oil','Bright lemon curd, soft crumb','$6.50','151991'],['cake','Carrot & Walnut','Spiced cake, cream cheese frosting','$6.50','156595'],['cake','Black Forest','Cherry compote, dark chocolate','$7.50','157111'],['cake','Pistachio Rose','Pistachio sponge, rose cream','$7.50','154759'],['cake','Basque Cheesecake','Burnt top, creamy centre','$7.00','157111'],['cake','Mango Coconut','Tropical mango, coconut cream','$6.50','155102'],['cake','Tiramisu Slice','Espresso mascarpone, cocoa','$7.50','157187'],['cake','Earl Grey Fig','Tea-infused cake, fig jam','$7.00','156372'],['cake','Red Velvet','Velvety cocoa, vanilla cream','$6.50','158678'],['cake','Blueberry Crumble','Wild berries, oat streusel','$6.50','149963'],['cake','Salted Caramel','Caramel sponge, sea salt fudge','$7.50','154159'],['cake','Matcha Strawberry','Matcha chiffon, strawberry cream','$7.50','154196'],['cake','Coconut Pandan','Pandan sponge, coconut custard','$6.50','148847'],['cake','Honey Pear','Poached pear, honey buttercream','$7.00','150944'],['cake','Mocha Praline','Coffee ganache, hazelnut crunch','$7.50','155102'],['cake','Orange Poppyseed','Orange glaze, poppyseed crumb','$6.00','151991'],['cake','Vanilla Bean','Vanilla bean, whipped cream','$6.00','156372'],['cake','Raspberry Rose','Raspberry jam, rose mascarpone','$7.00','154759'],['cake','Banana Toffee','Caramelized banana, toffee cream','$6.50','157898'],['cake','Cinnamon Apple','Apple compote, cinnamon crumble','$6.50','156595'],['cake','Chai Spice','Chai buttercream, brown sugar cake','$6.50','157111'],['cake','Peanut Butter Cup','Peanut butter mousse, chocolate fudge','$7.50','157187'],['cake','Citrus Basque','Lime zest, burnt cheesecake','$7.00','155102'],
+			['drink','House Cold Brew','Smooth, chocolatey, slow-steeped','$4.00','151770'],['drink','Iced Matcha Latte','Ceremonial matcha, oat milk','$5.00','153198'],['drink','Rose Lychee Soda','Lychee, rose, sparkling water','$4.50','155102'],['drink','Brown Sugar Latte','Espresso, brown sugar, milk','$5.00','149963'],['drink','Mango Passion Tea','Mango, passionfruit, jasmine tea','$4.50','154159'],['drink','Strawberry Cream Soda','Strawberry, vanilla, soda','$4.50','157187'],['drink','Classic Cappuccino','Double espresso, silky foam','$4.00','151770'],['drink','Coconut Americano','Espresso, coconut water, ice','$4.50','148847'],['drink','Peach Oolong Fizz','Peach, oolong tea, bubbles','$4.50','155102'],['drink','Dark Cocoa','72% cocoa, steamed milk','$4.50','157898'],['drink','Honey Yuzu Tea','Yuzu, wildflower honey, tea','$4.00','151991'],['drink','Espresso Tonic','Espresso, tonic, orange peel','$4.50','149963'],['drink','Vanilla Cream Latte','Vanilla bean, espresso, milk','$5.00','156372'],['drink','Watermelon Cooler','Watermelon, lime, mint','$4.00','154759'],['drink','Pandan Iced Latte','Pandan syrup, espresso, milk','$5.00','148847'],['drink','Chamomile Cloud','Chamomile, honey, lemon foam','$4.00','151770'],['drink','Salted Caramel Frappe','Caramel, coffee, whipped cream','$5.50','154159'],['drink','Black Sesame Latte','Black sesame, oat milk, espresso','$5.00','157187'],['drink','Ginger Lime Spritz','Fresh ginger, lime, soda','$4.00','155102'],['drink','Blueberry Earl Grey','Blueberry, earl grey, lemon','$4.50','149963'],['drink','Flat White','Rich espresso, microfoam','$4.00','151770'],['drink','Pineapple Mint Tea','Pineapple, mint, green tea','$4.00','155102'],['drink','Chocolate Hazelnut Shake','Hazelnut, cocoa, vanilla cream','$5.50','157898'],['drink','Jasmine Milk Tea','Jasmine tea, house milk foam','$4.50','153198'],['drink','Cucumber Tonic','Cucumber, lime, tonic water','$4.00','151991']
+		];
+		const grid = document.getElementById('productGrid'), empty = document.getElementById('emptyState'); let currentFilter = 'all', bag = [];
+		const imageSources = {
+			cake: [
+				'1578985545062-69928b1d9587',
+				'1559620192-032c4bc4674e',
+				'1571115177098-24ec42ed204d',
+				'1588195538326-c5b1e9f80a1b',
+				'1565958011703-44f9829ba187'
+			],
+			drink: [
+				'1517701604599-bb29b565090c',
+				'1531988042231-d39a9cc12a9a',
+				'1544145945-f90425340c7e',
+				'1495474472287-4d71bcdd2085',
+				'1513558161293-cdaf765ed2fd'
+			]
+		};
+		function image(id, type, index = Number(id)) {
+			const sourceList = imageSources[type];
+			const sourceIndex = Math.abs(index) % sourceList.length;
+			return `https://images.unsplash.com/photo-${sourceList[sourceIndex]}?auto=format&fit=crop&w=600&q=78`;
+		}
+		function render() { const term = document.getElementById('searchInput').value.toLowerCase(); grid.innerHTML = products.map((p,i) => ({p,i})).filter(x => (currentFilter === 'all' || x.p[0] === currentFilter) && (x.p[1] + x.p[2]).toLowerCase().includes(term)).map(({p,i}) => `<article class="product"><div class="product-photo"><img src="${image(p[4],p[0],i)}" alt="${p[1]}" loading="lazy"><span class="product-type">${p[0] === 'cake' ? 'Cake' : 'Pour'}</span><button class="add-button" data-index="${i}" aria-label="Add ${p[1]} to bag">+</button></div><div class="product-info"><div><h3>${p[1]}</h3><p>${p[2]}</p></div><strong>${p[3]}</strong></div></article>`).join(''); empty.style.display = grid.children.length ? 'none' : 'block'; }
+		function updateCart() { document.getElementById('cartCount').textContent = bag.reduce((a,x) => a + x.qty, 0); document.getElementById('cartItems').innerHTML = bag.length ? bag.map((x,i) => `<div class="cart-item"><img src="${image(x.product[4],x.product[0],x.index)}" alt=""><div><b>${x.product[1]}</b><span>${x.product[3]}</span><div class="qty"><button data-cart="${i}" data-change="-1">−</button><span>${x.qty}</span><button data-cart="${i}" data-change="1">+</button></div></div></div>`).join('') : '<div class="cart-empty">Your bag is waiting<br>for something delicious.</div>'; document.getElementById('cartTotal').textContent = '$' + bag.reduce((a,x) => a + parseFloat(x.product[3].slice(1)) * x.qty, 0).toFixed(2); }
+		grid.addEventListener('click', e => { const btn = e.target.closest('.add-button'); if (!btn) return; const index = Number(btn.dataset.index), product = products[index], found = bag.find(x => x.product === product); found ? found.qty++ : bag.push({product,qty:1,index}); updateCart(); document.getElementById('cartDrawer').classList.add('open'); document.getElementById('overlay').classList.add('show'); });
+		document.querySelector('.spotlight-grid').addEventListener('click', e => { const btn = e.target.closest('.spotlight-add'); if (!btn) return; const index = [0,1,19][Number(btn.dataset.spotlight)], product = products[index], found = bag.find(x => x.product === product); found ? found.qty++ : bag.push({product,qty:1,index}); updateCart(); document.getElementById('cartDrawer').classList.add('open'); document.getElementById('overlay').classList.add('show'); });
+		document.getElementById('showCakes').onclick = () => { document.querySelector('.filter[data-filter="cake"]').click(); };
+		document.getElementById('cartItems').addEventListener('click', e => { if (!e.target.dataset.cart) return; const item = bag[e.target.dataset.cart]; item.qty += +e.target.dataset.change; if (!item.qty) bag.splice(e.target.dataset.cart,1); updateCart(); });
+		document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => { document.querySelector('.filter.active').classList.remove('active'); btn.classList.add('active'); currentFilter = btn.dataset.filter; render(); })); document.getElementById('searchInput').addEventListener('input', render);
+		function toggleCart(open) { document.getElementById('cartDrawer').classList.toggle('open', open); document.getElementById('overlay').classList.toggle('show', open); document.getElementById('cartDrawer').setAttribute('aria-hidden', !open); }
+		function toggleCheckout(open) { document.getElementById('checkoutModal').classList.toggle('open', open); document.getElementById('checkoutModal').setAttribute('aria-hidden', !open); if (open) document.getElementById('checkoutTotal').textContent = document.getElementById('cartTotal').textContent; }
+		document.getElementById('cartButton').onclick = () => toggleCart(true); document.getElementById('closeCart').onclick = () => toggleCart(false); document.getElementById('overlay').onclick = () => toggleCart(false);
+		document.querySelector('.checkout').onclick = () => { if (bag.length) { toggleCart(false); toggleCheckout(true); } };
+		document.getElementById('closeCheckout').onclick = () => toggleCheckout(false);
+		document.getElementById('checkoutForm').onsubmit = event => { event.preventDefault(); const formData = new FormData(event.target); const orderSummary = `Crumb & Pour order for ${formData.get('name')} | ${formData.get('orderType')} | Total ${document.getElementById('checkoutTotal').textContent}`; document.getElementById('orderQr').src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(orderSummary)}`; document.getElementById('checkoutFormView').hidden = true; document.getElementById('orderSuccess').hidden = false; bag = []; updateCart(); };
+		document.getElementById('continueShopping').onclick = () => toggleCheckout(false); render(); updateCart();
+	</script>
+</body>
+</html>
